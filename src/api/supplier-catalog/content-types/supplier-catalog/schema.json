@@ -4,7 +4,8 @@
   "info": {
     "singularName": "supplier-catalog",
     "pluralName": "supplier-catalogs",
-    "displayName": "Supplier Catalog"
+    "displayName": "Supplier Catalog",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,24 +16,60 @@
       "type": "string"
     },
     "CoverSupplierDefault": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "DocumentSupplier": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "MarqueSupplier": {
       "type": "enumeration",
       "enum": [
+        "Ancor",
+        "Apli-Agipa",
+        "Bic",
+        "Canson",
+        "Casio",
+        "CEP",
+        "Colart",
+        "Conquérant",
+        "Dymo",
+        "Elve",
+        "Esselte",
+        "Exacompta",
+        "Fabriano",
+        "GBC",
+        "Giotto",
+        "Global Notes",
+        "GPV",
+        "Hexis",
+        "Luxor",
         "Maped",
-        "Colart"
+        "Nobo",
+        "Oxford",
+        "Pebeo",
+        "Pentel",
+        "Pilot",
+        "QuoVadis",
+        "Rapid",
+        "Rexel",
+        "Rhodia",
+        "Romeo & Maestri",
+        "Sicad Group",
+        "Staedtler",
+        "Tesa",
+        "Trodat",
+        "Waterman / Parker",
+        "Wonday"
       ]
     },
     "Annee": {
@@ -41,45 +78,54 @@
     "Gamme": {
       "type": "customField",
       "options": [
-        "Fourniture de bureau",
-        "Fournitures Scolaires"
+        "Fournitures Scolaires",
+        "Fournitures de Bureau",
+        "Mobilier de Bureau",
+        "Tout Types de Papiers & Cartons",
+        "Solutions d'Archivages et de Stockages",
+        "Support d'Impressions Numériques"
       ],
       "customField": "plugin::multi-select.multi-select"
     },
     "CoverSquareby3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "CoverSquareby2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "CoverRectangle": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Cover620": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "CoverSquareby3Full": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     }
   }
 }
