@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_office_catalogs",
+  "info": {
+    "singularName": "main-office-catalog",
+    "pluralName": "main-office-catalogs",
+    "displayName": "Main Office Catalog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "Maj": {
+      "type": "string"
+    }
+  }
+}
