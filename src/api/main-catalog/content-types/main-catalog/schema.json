@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "main_catalogs",
+  "info": {
+    "singularName": "main-catalog",
+    "pluralName": "main-catalogs",
+    "displayName": "Main Catalog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Document": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Maj": {
+      "type": "string"
+    }
+  }
+}
