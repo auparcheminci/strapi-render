@@ -1,0 +1,85 @@
+{
+  "kind": "collectionType",
+  "collectionName": "supplier_catalogs",
+  "info": {
+    "singularName": "supplier-catalog",
+    "pluralName": "supplier-catalogs",
+    "displayName": "Supplier Catalog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "TitleSupplier": {
+      "type": "string"
+    },
+    "CoverSupplierDefault": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "DocumentSupplier": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "MarqueSupplier": {
+      "type": "enumeration",
+      "enum": [
+        "Maped",
+        "Colart"
+      ]
+    },
+    "Annee": {
+      "type": "integer"
+    },
+    "Gamme": {
+      "type": "customField",
+      "options": [
+        "Fourniture de bureau",
+        "Fournitures Scolaires"
+      ],
+      "customField": "plugin::multi-select.multi-select"
+    },
+    "CoverSquareby3": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "CoverSquareby2": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "CoverRectangle": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Cover620": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "CoverSquareby3Full": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
