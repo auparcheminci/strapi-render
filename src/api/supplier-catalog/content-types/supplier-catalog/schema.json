@@ -72,9 +72,6 @@
         "Wonday"
       ]
     },
-    "Annee": {
-      "type": "integer"
-    },
     "Gamme": {
       "type": "customField",
       "options": [
@@ -126,6 +123,9 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "Annee": {
+      "type": "string"
     }
   }
 }
