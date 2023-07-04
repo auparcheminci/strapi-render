@@ -4,7 +4,8 @@
   "info": {
     "singularName": "projet",
     "pluralName": "projets",
-    "displayName": "Projets"
+    "displayName": "Projets",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,18 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "Rectangle": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Carre": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Title": {
       "type": "string"
@@ -33,7 +36,7 @@
       "enum": [
         "Mobilier de bureaux",
         "Vestiaires",
-        "Stockages & Archivages"
+        "Stockages et Archivages"
       ]
     }
   }
