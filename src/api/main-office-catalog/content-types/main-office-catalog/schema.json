@@ -15,7 +15,7 @@
     "Title": {
       "type": "string"
     },
-    "Document": {
+    "document_cha": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -38,26 +38,39 @@
       ]
     },
     "document_arm": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "document_arch": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "document_ref": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "document_mob": {
       "allowedTypes": [
         "images",
         "files",
