@@ -800,7 +800,7 @@ export interface ApiGaleriePhotoGaleriePhoto extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Rectangle: Attribute.Media;
+    Rectangle: Attribute.Media<'images'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -832,7 +832,7 @@ export interface ApiMainCatalogMainCatalog extends Schema.CollectionType {
   };
   attributes: {
     Title: Attribute.String;
-    Document: Attribute.Media;
+    Document: Attribute.Media<'files'>;
     Maj: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
@@ -866,15 +866,17 @@ export interface ApiMainOfficeCatalogMainOfficeCatalog
   };
   attributes: {
     Title: Attribute.String;
-    document_cha: Attribute.Media;
+    document_cha: Attribute.Media<'files'>;
     Maj: Attribute.String;
-    document_vest: Attribute.Media;
-    document_arm: Attribute.Media;
-    document_arch: Attribute.Media;
-    document_ref: Attribute.Media;
-    document_mob: Attribute.Media;
-    document_kamos: Attribute.Media;
-    document_merryfair: Attribute.Media;
+    document_vest: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    document_arm: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    document_arch: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    document_ref: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    document_mob: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    document_kamos: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    document_merryfair: Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -905,8 +907,8 @@ export interface ApiProjetProjet extends Schema.CollectionType {
     draftAndPublish: true;
   };
   attributes: {
-    Rectangle: Attribute.Media;
-    Carre: Attribute.Media;
+    Rectangle: Attribute.Media<'images'>;
+    Carre: Attribute.Media<'images'>;
     Title: Attribute.String;
     Categories: Attribute.Enumeration<
       ['Mobilier de bureaux', 'Vestiaires', 'Stockages et Archivages']
@@ -943,8 +945,8 @@ export interface ApiSupplierCatalogSupplierCatalog
   };
   attributes: {
     TitleSupplier: Attribute.String;
-    CoverSupplierDefault: Attribute.Media;
-    DocumentSupplier: Attribute.Media;
+    CoverSupplierDefault: Attribute.Media<'images'>;
+    DocumentSupplier: Attribute.Media<'files'>;
     MarqueSupplier: Attribute.Enumeration<
       [
         'Ancor',
@@ -997,11 +999,11 @@ export interface ApiSupplierCatalogSupplierCatalog
           "Support d'Impressions Num\u00E9riques"
         ]
       >;
-    CoverSquareby3: Attribute.Media;
-    CoverSquareby2: Attribute.Media;
-    CoverRectangle: Attribute.Media;
-    Cover620: Attribute.Media;
-    CoverSquareby3Full: Attribute.Media;
+    CoverSquareby3: Attribute.Media<'images'>;
+    CoverSquareby2: Attribute.Media<'images'>;
+    CoverRectangle: Attribute.Media<'images'>;
+    Cover620: Attribute.Media<'images'>;
+    CoverSquareby3Full: Attribute.Media<'images'>;
     Annee: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
