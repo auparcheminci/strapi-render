@@ -1,3 +1,6 @@
-module.exports = ({ env }) => ({
-   
-  });
+module.exports = {
+  // Other plugins...
+  'multi-select': {
+    enabled: true,
+  },
+};

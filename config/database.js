@@ -1,11 +1,15 @@
-const path = require('path');
-
 module.exports = ({ env }) => ({
   connection: {
-    client: 'sqlite',
+    client: 'sqlite', // Use sqlite dialect
     connection: {
-      filename: env('DATABASE_FILENAME', path.join(__dirname, '..', '.tmp/data.db')),
+      filename: env('DATABASE_FILENAME', '.tmp/data.db'), // Path to your SQLite database
     },
     useNullAsDefault: true,
+    pool: {
+      min: 0,
+      max: 1,
+    },
+    debug: false,
   },
 });
+
