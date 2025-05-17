@@ -2039,7 +2039,7 @@
     tar-stream "2.2.0"
     ws "8.17.1"
 
-"@strapi/database@5.13.0", "@strapi/database@latest":
+"@strapi/database@5.13.0", "@strapi/database@5.x.x":
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/@strapi/database/-/database-5.13.0.tgz#00c0e4b1cf01e8498e58b5eff2444734d7ed0d18"
   integrity sha512-jkouPxhDZaOBSKVqVEBFoKY68WVE7YV63+kFsWMIi1mjbghqG+HeLHgCE7nCxRydZYnbxrBo3H2Rj09pMUPNIw==
@@ -2224,7 +2224,7 @@
     react-redux "8.1.3"
     yup "0.32.9"
 
-"@strapi/strapi@latest":
+"@strapi/strapi@5.x.x":
   version "5.13.0"
   resolved "https://registry.yarnpkg.com/@strapi/strapi/-/strapi-5.13.0.tgz#3d9594e1daa21534cb0c8302f7d1630740c090d1"
   integrity sha512-1Yr42A5MCNrkUnJhIP0drYqidOLzVed3HGbmBQwQvzQuXWKzjnSapclrUN++uReqQmIWlri2XbaPnhhuz8eAwA==
